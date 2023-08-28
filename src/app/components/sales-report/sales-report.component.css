@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins';
+}
+
+body {
+  background: #EDEDED;
+}
+
+.sales-dashboard {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 0em;
+
+  display: grid;
+  grid-template-columns: .72fr 1fr;
+}
+.sales-dashboard > label {
+  font-size: 6px;
+}
+
+.grafic-dashboard {
+  display: grid;
+  place-content: start;
+}
+
+.details-dashboard {
+  display: grid;
+  margin: 0 auto;
+  gap: .4em;
+  grid-template-rows: .2fr .2fr .2fr;
+}
+
+.info-details {
+  width: 150px;
+  height: 80px;
+
+  background: #F0E7FF;
+  border-radius: 5px;
+  margin: 2em 2em 0em 2em;
+}
+
+.info-details > label, h6 {
+  margin: .5em;
+  font-weight: bold;
+  font-size: 14px;
+  color: #5F29B8;
+}
+
+.title-sales-report {
+  font-size: 14px;
+  font-weight: bold;
+  color: #5F29B8;
+  margin: 1em 0em 2em 3em;
+}
+
+.title-details {
+  font-size: 14px;
+  font-weight: bold;
+  color: #5F29B8;
+  margin: 1em 0em 0em 3em;
+}
+
+::ng-deep .gridline-horizontal line.gridline-path.gridline-path-vertical {
+  display: none;
+}
+
+::ng-deep .x.axis .tick text {
+  font-size: 10px;
+}
+
+::ng-deep .y.axis .tick text {
+  font-size: 10px !important;
+}
+
+::ng-deep .bar-chart .chart .tick text {
+  padding: 20em !important;
+}
+
+.gridline-horizontal {
+  margin: -1em 0em 0em -2em;
+}

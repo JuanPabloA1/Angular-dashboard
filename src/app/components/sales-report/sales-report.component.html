@@ -1,0 +1,34 @@
+<div class="sales-dashboard">
+  <div class="grafic-dashboard">
+    <h5 class="title-sales-report">Sales Report</h5>
+    <ngx-charts-bar-vertical
+    [view]="view"
+    [scheme]="colorScheme"
+    [results]="single"
+    [xAxis]="true"
+    [yAxis]="true"
+    [yScaleMax]="90"
+    [yScaleMin]="10"
+    [showXAxisLabel]="true"
+    [showYAxisLabel]="true"
+    [barPadding]="50"
+    class="gridline-horizontal"
+    >
+  </ngx-charts-bar-vertical>
+  </div>
+  <div class="details-dashboard">
+    <h5 class="title-details">Details</h5>
+    <div class="info-details">
+      <label>TOTAL SALES</label>
+      <h6>15,280.00</h6>
+    </div>
+    <div class="info-details">
+      <label>TOTAL REFOUNDS</label>
+      <h6>12.00</h6>
+    </div>
+    <div class="info-details">
+      <label>TOTAL INCOME</label>
+      <h6>25,180.00</h6>
+    </div>
+  </div>
+</div>

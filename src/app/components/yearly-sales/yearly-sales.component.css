@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #5F29B8;
+  font-family: 'Poppins';
+}
+
+.grid-yearly-sales {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  place-items: center;
+
+  background: white;
+  border-radius: 24px;
+  height: calc(100% - 0px);
+}
+
+.grid-yearly-sales > h5 {
+  font-size: 14px;
+  margin: 0 auto;
+}
+
+.packages {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* place-items: center; */
+  margin: 14px;
+}
+
+.packages > img {
+  margin: 0 auto;
+}
+
+.packages > div > p {
+  font-size: 8px !important;
+}
+
+.packages > div > h4 {
+  font-size: 15px;
+}
+
+.packages > h4 {
+  font-size: 15px;
+  margin: 0 auto;
+}

@@ -1,0 +1,60 @@
+/*
+Arquitectura de Css
+1. Posicionamiento
+2. Modelo de caja (Box Model)
+3. Tipografía
+4. Visuales
+5. Otros
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+aside {
+  width: 200px;
+  height: calc(100vh - 7em);
+  display: grid;
+  grid-template-rows: 100px 35px 35px 35px 35px 35px 35px 160px;
+  padding: 1em;
+  border-radius: 0px 0px 12px 12px;
+
+  background-color: #5F29B8;
+
+  font-family: 'Poppins';
+  color: #fff;
+}
+
+span {
+  margin-left: 3.5em;
+  height: 0;
+
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+span:hover {
+  transform: scale(1.1);
+}
+
+span > img {
+  position: absolute;
+  margin: .3em 0em 0em -2em;
+}
+
+.footer-menu {
+  width: 170px;
+  height: 80px;
+  border-radius: 24px;
+  padding: 1em;
+  background-color: #723EC8;
+  border: 1px solid #A97DF3;
+  font-size: 10px;
+}
+
+.footer-menu > label {
+  font-size: 12px;
+  font-weight: bold;
+}
